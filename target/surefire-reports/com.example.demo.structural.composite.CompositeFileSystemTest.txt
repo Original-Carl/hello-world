@@ -1,0 +1,60 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.structural.composite.CompositeFileSystemTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! -- in com.example.demo.structural.composite.CompositeFileSystemTest
+com.example.demo.structural.composite.CompositeFileSystemTest.emptyDirectory_size_isZero -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.composite.FileDirectory.size(FileDirectory.java:15)
+	at com.example.demo.structural.composite.CompositeFileSystemTest.emptyDirectory_size_isZero(CompositeFileSystemTest.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.composite.CompositeFileSystemTest.file_size_returnsSize -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.composite.FileLeaf.size(FileLeaf.java:8)
+	at com.example.demo.structural.composite.CompositeFileSystemTest.file_size_returnsSize(CompositeFileSystemTest.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.composite.CompositeFileSystemTest.clientCode_treatsLeafAndCompositeUniformly -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.composite.FileLeaf.size(FileLeaf.java:8)
+	at java.base/java.util.stream.ReferencePipeline$5$1.accept(ReferencePipeline.java:248)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:722)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.LongPipeline.reduce(LongPipeline.java:501)
+	at java.base/java.util.stream.LongPipeline.sum(LongPipeline.java:459)
+	at com.example.demo.structural.composite.CompositeFileSystemTest.clientCode_treatsLeafAndCompositeUniformly(CompositeFileSystemTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.composite.CompositeFileSystemTest.directory_size_sumsImmediateChildren -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.composite.FileDirectory.size(FileDirectory.java:15)
+	at com.example.demo.structural.composite.CompositeFileSystemTest.directory_size_sumsImmediateChildren(CompositeFileSystemTest.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.composite.CompositeFileSystemTest.file_name_returnsName -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.composite.FileLeaf.name(FileLeaf.java:7)
+	at com.example.demo.structural.composite.CompositeFileSystemTest.file_name_returnsName(CompositeFileSystemTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.composite.CompositeFileSystemTest.nestedDirectories_size_isRecursive -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.composite.FileDirectory.size(FileDirectory.java:15)
+	at com.example.demo.structural.composite.CompositeFileSystemTest.nestedDirectories_size_isRecursive(CompositeFileSystemTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

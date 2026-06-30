@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.behavioral.iterator.IteratorCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! -- in com.example.demo.behavioral.iterator.IteratorCommandTest
+com.example.demo.behavioral.iterator.IteratorCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.001 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === Iterator Pattern ===
+Provide a way to sequentially access elements of an aggregate without
+exposing its underlying representation.
+
+Java's java.util.Iterator is the canonical example. The pattern lets
+you write algorithms once, over the Iterator interface, and apply them
+to any data structure that implements it (list, tree, graph, etc.).
+
+Custom iterators are useful for domain traversals: tree in-order walk,
+paginated API responses, lazy file-line streaming.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.behavioral.iterator.IteratorCommandTest.run_printsDescriptionAndStubMarker(IteratorCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

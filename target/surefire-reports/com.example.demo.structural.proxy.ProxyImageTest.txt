@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.structural.proxy.ProxyImageTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in com.example.demo.structural.proxy.ProxyImageTest
+com.example.demo.structural.proxy.ProxyImageTest.proxy_loadsOnFirstDisplay -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.proxy.ProxyImage.display(ProxyImage.java:9)
+	at com.example.demo.structural.proxy.ProxyImageTest.proxy_loadsOnFirstDisplay(ProxyImageTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.proxy.ProxyImageTest.proxy_displaysCorrectContent -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.proxy.ProxyImage.display(ProxyImage.java:9)
+	at com.example.demo.structural.proxy.ProxyImageTest.proxy_displaysCorrectContent(ProxyImageTest.java:34)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.proxy.ProxyImageTest.proxy_doesNotReloadOnSubsequentDisplays -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.proxy.ProxyImage.display(ProxyImage.java:9)
+	at com.example.demo.structural.proxy.ProxyImageTest.proxy_doesNotReloadOnSubsequentDisplays(ProxyImageTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

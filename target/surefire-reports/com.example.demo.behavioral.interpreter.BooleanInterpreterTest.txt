@@ -1,0 +1,84 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.behavioral.interpreter.BooleanInterpreterTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! -- in com.example.demo.behavioral.interpreter.BooleanInterpreterTest
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.or_falseOrFalse_isFalse -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.OrExpression.interpret(OrExpression.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.or_falseOrFalse_isFalse(BooleanInterpreterTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.not_true_isFalse -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.NotExpression.interpret(NotExpression.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.not_true_isFalse(BooleanInterpreterTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.literal_false_interpretsFalse -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.Literal.interpret(Literal.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.literal_false_interpretsFalse(BooleanInterpreterTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndFalse_isFalse -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.AndExpression.interpret(AndExpression.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndFalse_isFalse(BooleanInterpreterTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.not_false_isTrue -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.NotExpression.interpret(NotExpression.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.not_false_isTrue(BooleanInterpreterTest.java:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.or_falseOrTrue_isTrue -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.OrExpression.interpret(OrExpression.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.or_falseOrTrue_isTrue(BooleanInterpreterTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.composite_AndOrNot -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.AndExpression.interpret(AndExpression.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.composite_AndOrNot(BooleanInterpreterTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndTrue_isTrue -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.AndExpression.interpret(AndExpression.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndTrue_isTrue(BooleanInterpreterTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.literal_true_interpretsTrue -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.Literal.interpret(Literal.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.literal_true_interpretsTrue(BooleanInterpreterTest.java:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.variable_lookupsValueFromContext -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.interpreter.Variable.interpret(Variable.java:9)
+	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.variable_lookupsValueFromContext(BooleanInterpreterTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

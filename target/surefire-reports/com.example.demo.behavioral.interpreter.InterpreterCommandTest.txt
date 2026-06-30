@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.behavioral.interpreter.InterpreterCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! -- in com.example.demo.behavioral.interpreter.InterpreterCommandTest
+com.example.demo.behavioral.interpreter.InterpreterCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.001 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === Interpreter Pattern ===
+Given a language, define a representation for its grammar along with an
+interpreter that uses the representation to interpret sentences in the language.
+
+Each grammar rule maps to a class; a sentence is an object tree that is
+evaluated by calling interpret() recursively.
+
+Example: a simple boolean expression language —
+  And(Or(Var("x"), Lit(true)), Not(Var("y")))
+is evaluated against a context {x=false, y=false} → true.
+
+Rarely the best tool for complex grammars (use a parser generator instead),
+but clean for small, stable DSLs like search filters or rule engines.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.behavioral.interpreter.InterpreterCommandTest.run_printsDescriptionAndStubMarker(InterpreterCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

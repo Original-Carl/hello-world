@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.creational.abstractfactory.AbstractFactoryCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! -- in com.example.demo.creational.abstractfactory.AbstractFactoryCommandTest
+com.example.demo.creational.abstractfactory.AbstractFactoryCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.035 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === Abstract Factory Pattern ===
+Provide an interface for creating families of related or dependent objects
+without specifying their concrete classes.
+
+Classic example: a UI toolkit factory that produces Button + Checkbox
+for a given look-and-feel (Windows / macOS / Web). Swapping the factory
+swaps the entire family at once — no individual class is referenced directly.
+
+Differs from Factory Method in that it produces *multiple* product types
+(a product family), whereas Factory Method produces one product.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.creational.abstractfactory.AbstractFactoryCommandTest.run_printsDescriptionAndStubMarker(AbstractFactoryCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

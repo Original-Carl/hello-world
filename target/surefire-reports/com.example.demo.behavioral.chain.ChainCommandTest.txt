@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.behavioral.chain.ChainCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! -- in com.example.demo.behavioral.chain.ChainCommandTest
+com.example.demo.behavioral.chain.ChainCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.001 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === Chain of Responsibility Pattern ===
+Avoid coupling the sender of a request to its receiver by giving more than
+one object a chance to handle the request; chain the receiving objects and
+pass the request along the chain until one handles it.
+
+Each handler decides: handle the request, pass it on, or both.
+
+Example: an HTTP middleware pipeline — each handler either responds (auth
+failure, rate-limit exceeded) or calls the next handler in the chain.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.behavioral.chain.ChainCommandTest.run_printsDescriptionAndStubMarker(ChainCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

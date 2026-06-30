@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.creational.abstractfactory.AbstractFactoryTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! -- in com.example.demo.creational.abstractfactory.AbstractFactoryTest
+com.example.demo.creational.abstractfactory.AbstractFactoryTest.macFactory_createCheckbox_returnsMacCheckbox -- Time elapsed: 0.013 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.creational.abstractfactory.MacWidgetFactory.createCheckbox(MacWidgetFactory.java:5)
+	at com.example.demo.creational.abstractfactory.AbstractFactoryTest.macFactory_createCheckbox_returnsMacCheckbox(AbstractFactoryTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.creational.abstractfactory.AbstractFactoryTest.swappingFactory_switchesEntireFamily -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.creational.abstractfactory.WindowsWidgetFactory.createButton(WindowsWidgetFactory.java:4)
+	at com.example.demo.creational.abstractfactory.AbstractFactoryTest.swappingFactory_switchesEntireFamily(AbstractFactoryTest.java:48)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.creational.abstractfactory.AbstractFactoryTest.macFactory_createButton_returnsMacButton -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.creational.abstractfactory.MacWidgetFactory.createButton(MacWidgetFactory.java:4)
+	at com.example.demo.creational.abstractfactory.AbstractFactoryTest.macFactory_createButton_returnsMacButton(AbstractFactoryTest.java:19)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.creational.abstractfactory.AbstractFactoryTest.windowsFactory_neverReturnsMacWidgets -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.creational.abstractfactory.WindowsWidgetFactory.createButton(WindowsWidgetFactory.java:4)
+	at com.example.demo.creational.abstractfactory.AbstractFactoryTest.windowsFactory_neverReturnsMacWidgets(AbstractFactoryTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.creational.abstractfactory.AbstractFactoryTest.windowsFactory_createCheckbox_returnsWindowsCheckbox -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.creational.abstractfactory.WindowsWidgetFactory.createCheckbox(WindowsWidgetFactory.java:5)
+	at com.example.demo.creational.abstractfactory.AbstractFactoryTest.windowsFactory_createCheckbox_returnsWindowsCheckbox(AbstractFactoryTest.java:26)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.creational.abstractfactory.AbstractFactoryTest.windowsFactory_createButton_returnsWindowsButton -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.creational.abstractfactory.WindowsWidgetFactory.createButton(WindowsWidgetFactory.java:4)
+	at com.example.demo.creational.abstractfactory.AbstractFactoryTest.windowsFactory_createButton_returnsWindowsButton(AbstractFactoryTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

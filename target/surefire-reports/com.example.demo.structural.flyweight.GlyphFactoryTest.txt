@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.structural.flyweight.GlyphFactoryTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in com.example.demo.structural.flyweight.GlyphFactoryTest
+com.example.demo.structural.flyweight.GlyphFactoryTest.differentSymbol_returnsDifferentInstance -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.flyweight.GlyphFactory.getGlyph(GlyphFactory.java:4)
+	at com.example.demo.structural.flyweight.GlyphFactoryTest.differentSymbol_returnsDifferentInstance(GlyphFactoryTest.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.flyweight.GlyphFactoryTest.manyRenders_fewCachedInstances -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.flyweight.GlyphFactory.getGlyph(GlyphFactory.java:4)
+	at com.example.demo.structural.flyweight.GlyphFactoryTest.manyRenders_fewCachedInstances(GlyphFactoryTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.flyweight.GlyphFactoryTest.render_includesExtrinsicPosition -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.flyweight.GlyphFactory.getGlyph(GlyphFactory.java:4)
+	at com.example.demo.structural.flyweight.GlyphFactoryTest.render_includesExtrinsicPosition(GlyphFactoryTest.java:45)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.flyweight.GlyphFactoryTest.sameIntrinsicState_returnsSameInstance -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.flyweight.GlyphFactory.getGlyph(GlyphFactory.java:4)
+	at com.example.demo.structural.flyweight.GlyphFactoryTest.sameIntrinsicState_returnsSameInstance(GlyphFactoryTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.flyweight.GlyphFactoryTest.cachedCount_doesNotGrowOnRepeatRequests -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.flyweight.GlyphFactory.getGlyph(GlyphFactory.java:4)
+	at com.example.demo.structural.flyweight.GlyphFactoryTest.cachedCount_doesNotGrowOnRepeatRequests(GlyphFactoryTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.flyweight.GlyphFactoryTest.differentFont_returnsDifferentInstance -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.flyweight.GlyphFactory.getGlyph(GlyphFactory.java:4)
+	at com.example.demo.structural.flyweight.GlyphFactoryTest.differentFont_returnsDifferentInstance(GlyphFactoryTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
