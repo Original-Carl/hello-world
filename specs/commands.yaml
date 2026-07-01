@@ -1,0 +1,220 @@
+version: "1"
+runtime:
+  language: Java
+  version: "21"
+  framework: Spring Shell 3.3.3
+  build: "mvn package -DskipTests"
+  invoke: "./demo.sh <command>"
+
+commands:
+
+  # Creational
+  - name: factory
+    family: creational
+    pattern: Factory Method
+    status: full_demo
+    invoke: "./demo.sh factory"
+    description: >
+      Defines an interface for creating an object, but lets subclasses decide which
+      class to instantiate. Decouples object creation from the code that uses it.
+
+  - name: builder
+    family: creational
+    pattern: Builder
+    status: full_demo
+    invoke: "./demo.sh builder"
+    description: >
+      Separates the construction of a complex object from its representation,
+      allowing the same construction process to produce different results.
+
+  - name: singleton
+    family: creational
+    pattern: Singleton
+    status: full_demo
+    invoke: "./demo.sh singleton"
+    description: >
+      Ensures a class has only one instance and provides a global access point to it.
+
+  - name: abstract-factory
+    family: creational
+    pattern: Abstract Factory
+    status: full_demo
+    invoke: "./demo.sh abstract-factory"
+    description: >
+      Provides an interface for creating families of related objects without specifying
+      their concrete classes. Demo: three game-theme factories (Fantasy, Sci-Fi, Modern)
+      each producing a coherent Character + Item + Location family.
+
+  - name: prototype
+    family: creational
+    pattern: Prototype
+    status: full_demo
+    invoke: "./demo.sh prototype"
+    description: >
+      Creates new objects by cloning a prototypical instance. Demo: enemy prototype
+      registry clones Goblin and Dragon archetypes, proving clones are independent copies.
+
+  # Structural
+  - name: adapter
+    family: structural
+    pattern: Adapter
+    status: full_demo
+    invoke: "./demo.sh adapter"
+    description: >
+      Converts the interface of a class into another interface clients expect,
+      letting incompatible interfaces work together.
+
+  - name: decorator
+    family: structural
+    pattern: Decorator
+    status: full_demo
+    invoke: "./demo.sh decorator"
+    description: >
+      Attaches additional responsibilities to an object dynamically by wrapping it
+      in decorator objects that share the same interface.
+
+  - name: facade
+    family: structural
+    pattern: Facade
+    status: full_demo
+    invoke: "./demo.sh facade"
+    description: >
+      Provides a simplified interface to a complex subsystem, reducing coupling
+      between clients and subsystem components.
+
+  - name: bridge
+    family: structural
+    pattern: Bridge
+    status: stub
+    invoke: "./demo.sh bridge"
+    description: >
+      Decouples an abstraction from its implementation so both can vary independently,
+      avoiding an M×N subclass explosion.
+
+  - name: composite
+    family: structural
+    pattern: Composite
+    status: stub
+    invoke: "./demo.sh composite"
+    description: >
+      Composes objects into tree structures to represent part-whole hierarchies,
+      letting clients treat leaves and composites uniformly.
+
+  - name: flyweight
+    family: structural
+    pattern: Flyweight
+    status: stub
+    invoke: "./demo.sh flyweight"
+    description: >
+      Shares intrinsic state across many fine-grained objects to reduce memory usage,
+      with extrinsic state passed in on each call.
+
+  - name: proxy
+    family: structural
+    pattern: Proxy
+    status: stub
+    invoke: "./demo.sh proxy"
+    description: >
+      Provides a surrogate for another object to control access — virtual, protection,
+      remote, or caching variants.
+
+  # Behavioral
+  - name: observer
+    family: behavioral
+    pattern: Observer
+    status: full_demo
+    invoke: "./demo.sh observer"
+    description: >
+      Defines a one-to-many dependency so that when one object changes state,
+      all its dependents are notified automatically.
+
+  - name: strategy
+    family: behavioral
+    pattern: Strategy
+    status: full_demo
+    invoke: "./demo.sh strategy"
+    description: >
+      Defines a family of algorithms, encapsulates each one, and makes them
+      interchangeable so the algorithm can vary independently from clients.
+
+  - name: command
+    family: behavioral
+    pattern: Command
+    status: full_demo
+    invoke: "./demo.sh command"
+    description: >
+      Encapsulates a request as an object, allowing parameterization, queuing,
+      logging, and undoable operations.
+
+  - name: chain
+    family: behavioral
+    pattern: Chain of Responsibility
+    status: stub
+    invoke: "./demo.sh chain"
+    description: >
+      Passes a request along a chain of handlers; each handler either handles it
+      or forwards it to the next. Example: HTTP middleware pipeline.
+
+  - name: iterator
+    family: behavioral
+    pattern: Iterator
+    status: full_demo
+    invoke: "./demo.sh iterator"
+    description: >
+      Provides sequential access to elements of an aggregate without exposing its
+      internal representation. Demo: ISS Argonaut flight plan iterating hex-grid waypoints.
+
+  - name: mediator
+    family: behavioral
+    pattern: Mediator
+    status: stub
+    invoke: "./demo.sh mediator"
+    description: >
+      Encapsulates how a set of objects interact, reducing O(N²) direct references
+      to a single central coordinator. Example: chat room routing messages between users.
+
+  - name: memento
+    family: behavioral
+    pattern: Memento
+    status: full_demo
+    invoke: "./demo.sh memento"
+    description: >
+      Captures and externalises an object's state without violating encapsulation,
+      enabling undo. Demo: ISS Argonaut starship navigating a hex grid with undoable
+      course corrections.
+
+  - name: state
+    family: behavioral
+    pattern: State
+    status: stub
+    invoke: "./demo.sh state"
+    description: >
+      Allows an object to alter its behaviour when internal state changes by delegating
+      to a State object. Example: vending machine Idle → HasCoin → Dispensing transitions.
+
+  - name: template
+    family: behavioral
+    pattern: Template Method
+    status: stub
+    invoke: "./demo.sh template"
+    description: >
+      Defines the skeleton of an algorithm in a base class, deferring specific steps
+      to subclasses without changing the algorithm's structure.
+
+  - name: visitor
+    family: behavioral
+    pattern: Visitor
+    status: stub
+    invoke: "./demo.sh visitor"
+    description: >
+      Lets you add operations to an object structure without modifying its classes,
+      using double dispatch to select the right overload.
+
+  - name: interpreter
+    family: behavioral
+    pattern: Interpreter
+    status: stub
+    invoke: "./demo.sh interpreter"
+    description: >
+      Defines a grammar representation and an interpreter for a language. Each rule
+      maps to a class; sentences are object trees evaluated recursively.
