@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.structural.composite.CompositeCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! -- in com.example.demo.structural.composite.CompositeCommandTest
+com.example.demo.structural.composite.CompositeCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === Composite Pattern ===
+Compose objects into tree structures to represent part-whole hierarchies,
+letting clients treat individual objects and compositions uniformly.
+
+Both leaf nodes and composite nodes implement the same Component interface,
+so a client iterating a tree doesn't need to distinguish between the two.
+
+Example: a file-system tree where File and Directory both implement
+Component.size() — a Directory.size() recursively sums its children.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.structural.composite.CompositeCommandTest.run_printsDescriptionAndStubMarker(CompositeCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

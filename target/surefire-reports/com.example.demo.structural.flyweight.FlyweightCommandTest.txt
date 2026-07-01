@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.structural.flyweight.FlyweightCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! -- in com.example.demo.structural.flyweight.FlyweightCommandTest
+com.example.demo.structural.flyweight.FlyweightCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.001 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === Flyweight Pattern ===
+Use sharing to efficiently support a large number of fine-grained objects
+by separating intrinsic (shared, immutable) state from extrinsic (per-instance)
+state.
+
+A FlyweightFactory caches and reuses shared instances; callers pass
+extrinsic state on each method call rather than storing it in the object.
+
+Example: a text editor representing each character as a Flyweight
+(glyph type + font = intrinsic), with position stored externally per use.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.structural.flyweight.FlyweightCommandTest.run_printsDescriptionAndStubMarker(FlyweightCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

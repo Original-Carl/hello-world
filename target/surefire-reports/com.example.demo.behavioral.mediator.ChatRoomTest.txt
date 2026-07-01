@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.behavioral.mediator.ChatRoomTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in com.example.demo.behavioral.mediator.ChatRoomTest
+com.example.demo.behavioral.mediator.ChatRoomTest.multipleMessages_allDeliveredInOrder -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.mediator.ChatRoom.register(ChatRoom.java:4)
+	at com.example.demo.behavioral.mediator.ChatRoomTest.multipleMessages_allDeliveredInOrder(ChatRoomTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.mediator.ChatRoomTest.message_deliveredToAllOtherUsers -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.mediator.ChatRoom.register(ChatRoom.java:4)
+	at com.example.demo.behavioral.mediator.ChatRoomTest.message_deliveredToAllOtherUsers(ChatRoomTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.mediator.ChatRoomTest.threeUsers_allReceiveFromOneUser -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.mediator.ChatRoom.register(ChatRoom.java:4)
+	at com.example.demo.behavioral.mediator.ChatRoomTest.threeUsers_allReceiveFromOneUser(ChatRoomTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.behavioral.mediator.ChatRoomTest.message_notDeliveredToSender -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.behavioral.mediator.ChatRoom.register(ChatRoom.java:4)
+	at com.example.demo.behavioral.mediator.ChatRoomTest.message_notDeliveredToSender(ChatRoomTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

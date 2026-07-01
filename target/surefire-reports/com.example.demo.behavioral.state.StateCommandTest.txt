@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.behavioral.state.StateCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! -- in com.example.demo.behavioral.state.StateCommandTest
+com.example.demo.behavioral.state.StateCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.003 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === State Pattern ===
+Allow an object to alter its behaviour when its internal state changes;
+the object will appear to change its class.
+
+Each state is encapsulated in its own class implementing a State interface.
+The Context delegates behaviour to the current State object and transitions
+between states by replacing it.
+
+Example: a vending machine transitions between Idle → HasCoin → Dispensing
+→ OutOfStock, with each state defining what insert(), eject(), and
+dispense() do.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.behavioral.state.StateCommandTest.run_printsDescriptionAndStubMarker(StateCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

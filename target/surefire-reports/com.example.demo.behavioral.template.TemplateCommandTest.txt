@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.behavioral.template.TemplateCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! -- in com.example.demo.behavioral.template.TemplateCommandTest
+com.example.demo.behavioral.template.TemplateCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.002 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === Template Method Pattern ===
+Define the skeleton of an algorithm in an abstract base class, deferring
+some steps to subclasses; subclasses redefine steps without changing the
+algorithm's structure.
+
+The base class calls abstract "hook" methods at fixed points; concrete
+subclasses fill them in. This is the inversion-of-control principle
+("don't call us, we'll call you").
+
+Example: a DataProcessor base class defines read() → process() → write();
+CsvProcessor and JsonProcessor override only the parsing step.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.behavioral.template.TemplateCommandTest.run_printsDescriptionAndStubMarker(TemplateCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

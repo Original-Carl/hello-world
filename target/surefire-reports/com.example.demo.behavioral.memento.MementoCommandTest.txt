@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.behavioral.memento.MementoCommandTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! -- in com.example.demo.behavioral.memento.MementoCommandTest
+com.example.demo.behavioral.memento.MementoCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.001 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting actual:
+  === Memento Pattern ===
+Without violating encapsulation, capture and externalise an object's
+internal state so the object can be restored to that state later.
+
+Three roles:
+  • Originator  — the object whose state is saved/restored
+  • Memento     — the snapshot (opaque to everyone except Originator)
+  • Caretaker   — holds mementos but never inspects them
+
+Example: undo/redo in a text editor — each keystroke produces a
+Memento; undo pops the last Memento and restores it.
+
+[stub — full demo coming]
+
+
+not to contain:
+  "[stub — full demo coming]"
+
+	at com.example.demo.behavioral.memento.MementoCommandTest.run_printsDescriptionAndStubMarker(MementoCommandTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+

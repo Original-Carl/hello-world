@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.structural.bridge.BridgeShapeTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! -- in com.example.demo.structural.bridge.BridgeShapeTest
+com.example.demo.structural.bridge.BridgeShapeTest.circle_withCanvasApi_outputContainsCanvas -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.bridge.BridgeCircle.draw(BridgeCircle.java:6)
+	at com.example.demo.structural.bridge.BridgeShapeTest.circle_withCanvasApi_outputContainsCanvas(BridgeShapeTest.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.bridge.BridgeShapeTest.rectangle_withCanvasApi_outputContainsCanvas -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.bridge.BridgeRectangle.draw(BridgeRectangle.java:6)
+	at com.example.demo.structural.bridge.BridgeShapeTest.rectangle_withCanvasApi_outputContainsCanvas(BridgeShapeTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.bridge.BridgeShapeTest.noNewSubclassNeeded_fourCombinationsFromTwoClassesTimesTwoApis -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.bridge.BridgeCircle.draw(BridgeCircle.java:6)
+	at com.example.demo.structural.bridge.BridgeShapeTest.noNewSubclassNeeded_fourCombinationsFromTwoClassesTimesTwoApis(BridgeShapeTest.java:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.bridge.BridgeShapeTest.swappingApi_changesCircleOutput -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.bridge.BridgeCircle.draw(BridgeCircle.java:6)
+	at com.example.demo.structural.bridge.BridgeShapeTest.swappingApi_changesCircleOutput(BridgeShapeTest.java:36)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.bridge.BridgeShapeTest.circle_withSvgApi_outputContainsSvg -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.bridge.BridgeCircle.draw(BridgeCircle.java:6)
+	at com.example.demo.structural.bridge.BridgeShapeTest.circle_withSvgApi_outputContainsSvg(BridgeShapeTest.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
+com.example.demo.structural.bridge.BridgeShapeTest.rectangle_withSvgApi_outputContainsSvg -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at com.example.demo.structural.bridge.BridgeRectangle.draw(BridgeRectangle.java:6)
+	at com.example.demo.structural.bridge.BridgeShapeTest.rectangle_withSvgApi_outputContainsSvg(BridgeShapeTest.java:24)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+
