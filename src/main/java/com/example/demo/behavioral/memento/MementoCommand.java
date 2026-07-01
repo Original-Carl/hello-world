@@ -18,10 +18,35 @@ public class MementoCommand {
                   • Memento     — the snapshot (opaque to everyone except Originator)
                   • Caretaker   — holds mementos but never inspects them
 
-                Example: undo/redo in a text editor — each keystroke produces a
-                Memento; undo pops the last Memento and restores it.
-
-                [stub — full demo coming]
+                Demo: ISS Argonaut navigating a hex grid between a starport and a
+                docking platform, with course corrections that can be undone.
                 """);
+
+        Starship ship = new Starship(0, 0, 2, "E");
+        FlightLog log = new FlightLog();
+
+        printState("Docked at starport      ", ship);
+        log.push(ship.save());
+
+        ship.move();
+        ship.move();
+        printState("En route (2 moves E)    ", ship);
+        log.push(ship.save());
+
+        ship.setDirection("NE");
+        ship.setSpeed(3);
+        ship.move();
+        printState("Course correction → NE/3", ship);
+
+        ship.restore(log.pop());
+        printState("Undo correction         ", ship);
+
+        ship.restore(log.pop());
+        printState("Undo journey → starport ", ship);
+    }
+
+    private void printState(String label, Starship s) {
+        System.out.printf("  %-26s  pos=(%2d,%2d)  speed=%d  heading=%s%n",
+                label, s.q(), s.r(), s.speed(), s.direction());
     }
 }

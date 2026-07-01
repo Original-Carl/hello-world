@@ -17,5 +17,11 @@ public class Enemy implements Cloneable {
     public void setHealth(int h) { this.health = h; }
 
     @Override
-    public Enemy clone() { throw new UnsupportedOperationException(); }
+    public Enemy clone() {
+        try {
+            return (Enemy) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
+        }
+    }
 }

@@ -16,11 +16,18 @@ public class PrototypeCommand {
                 Useful when object creation is expensive (database fetch, complex init)
                 and a close copy is cheaper than building from scratch. Java's Cloneable
                 interface or a copy constructor are typical implementation vehicles.
-
-                Example: a game engine that clones a pre-configured enemy prototype
-                rather than re-running expensive asset-loading for each new instance.
-
-                [stub — full demo coming]
                 """);
+
+        EnemyPrototypeRegistry registry = new EnemyPrototypeRegistry();
+        registry.register("goblin", new Enemy("Goblin", 5, 5));
+        registry.register("dragon", new Enemy("Dragon", 50, 3));
+
+        for (String key : java.util.List.of("goblin", "dragon")) {
+            Enemy a = registry.getClone(key);
+            Enemy b = registry.getClone(key);
+            b.setHealth(b.health() * 2);
+            System.out.printf("%-8s  clone-A health=%d  clone-B health=%d (after doubling)  same ref=%b%n",
+                    a.type(), a.health(), b.health(), a == b);
+        }
     }
 }
