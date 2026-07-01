@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.behavioral.interpreter.BooleanInterpreterTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! -- in com.example.demo.behavioral.interpreter.BooleanInterpreterTest
+Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! -- in com.example.demo.behavioral.interpreter.BooleanInterpreterTest
 com.example.demo.behavioral.interpreter.BooleanInterpreterTest.or_falseOrFalse_isFalse -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.interpreter.OrExpression.interpret(OrExpression.java:9)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.interpreter.BooleanInterpreterTest.not_true_isFalse -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.not_true_isFalse -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.interpreter.NotExpression.interpret(NotExpression.java:9)
 	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.not_true_isFalse(BooleanInterpreterTest.java:60)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndFalse_isFalse -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndFalse_isFalse -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.interpreter.AndExpression.interpret(AndExpression.java:9)
 	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndFalse_isFalse(BooleanInterpreterTest.java:43)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.interpreter.BooleanInterpreterTest.composite_AndOrNot -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.composite_AndOrNot -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.interpreter.AndExpression.interpret(AndExpression.java:9)
 	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.composite_AndOrNot(BooleanInterpreterTest.java:75)
@@ -58,7 +58,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndTrue_isTrue -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndTrue_isTrue -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.interpreter.AndExpression.interpret(AndExpression.java:9)
 	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.and_trueAndTrue_isTrue(BooleanInterpreterTest.java:37)
@@ -74,7 +74,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.interpreter.BooleanInterpreterTest.variable_lookupsValueFromContext -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.behavioral.interpreter.BooleanInterpreterTest.variable_lookupsValueFromContext -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.interpreter.Variable.interpret(Variable.java:9)
 	at com.example.demo.behavioral.interpreter.BooleanInterpreterTest.variable_lookupsValueFromContext(BooleanInterpreterTest.java:24)

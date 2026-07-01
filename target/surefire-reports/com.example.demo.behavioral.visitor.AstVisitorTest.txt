@@ -2,7 +2,7 @@
 Test set: com.example.demo.behavioral.visitor.AstVisitorTest
 -------------------------------------------------------------------------------
 Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! -- in com.example.demo.behavioral.visitor.AstVisitorTest
-com.example.demo.behavioral.visitor.AstVisitorTest.print_compositeExpression_isReadable -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.behavioral.visitor.AstVisitorTest.print_compositeExpression_isReadable -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.visitor.MulNode.accept(MulNode.java:7)
 	at com.example.demo.behavioral.visitor.AstVisitorTest.print_compositeExpression_isReadable(AstVisitorTest.java:51)
@@ -26,7 +26,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.visitor.AstVisitorTest.print_numberNode_returnsString -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.behavioral.visitor.AstVisitorTest.print_numberNode_returnsString -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.visitor.NumberNode.accept(NumberNode.java:7)
 	at com.example.demo.behavioral.visitor.AstVisitorTest.print_numberNode_returnsString(AstVisitorTest.java:38)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.visitor.AstVisitorTest.doubleDispatch_newVisitorWithoutChangingNodes -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.behavioral.visitor.AstVisitorTest.doubleDispatch_newVisitorWithoutChangingNodes -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.visitor.AddNode.accept(AddNode.java:7)
 	at com.example.demo.behavioral.visitor.AstVisitorTest.doubleDispatch_newVisitorWithoutChangingNodes(AstVisitorTest.java:63)
@@ -58,7 +58,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.visitor.AstVisitorTest.eval_addNode_returnsSum -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.behavioral.visitor.AstVisitorTest.eval_addNode_returnsSum -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.visitor.AddNode.accept(AddNode.java:7)
 	at com.example.demo.behavioral.visitor.AstVisitorTest.eval_addNode_returnsSum(AstVisitorTest.java:22)

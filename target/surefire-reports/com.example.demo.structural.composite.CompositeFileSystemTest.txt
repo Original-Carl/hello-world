@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.structural.composite.CompositeFileSystemTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! -- in com.example.demo.structural.composite.CompositeFileSystemTest
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! -- in com.example.demo.structural.composite.CompositeFileSystemTest
 com.example.demo.structural.composite.CompositeFileSystemTest.emptyDirectory_size_isZero -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.structural.composite.FileDirectory.size(FileDirectory.java:15)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.structural.composite.CompositeFileSystemTest.directory_size_sumsImmediateChildren -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.structural.composite.CompositeFileSystemTest.directory_size_sumsImmediateChildren -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.structural.composite.FileDirectory.size(FileDirectory.java:15)
 	at com.example.demo.structural.composite.CompositeFileSystemTest.directory_size_sumsImmediateChildren(CompositeFileSystemTest.java:34)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.structural.composite.CompositeFileSystemTest.nestedDirectories_size_isRecursive -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.structural.composite.CompositeFileSystemTest.nestedDirectories_size_isRecursive -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.structural.composite.FileDirectory.size(FileDirectory.java:15)
 	at com.example.demo.structural.composite.CompositeFileSystemTest.nestedDirectories_size_isRecursive(CompositeFileSystemTest.java:44)

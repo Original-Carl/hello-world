@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.behavioral.iterator.NumberRangeTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in com.example.demo.behavioral.iterator.NumberRangeTest
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! -- in com.example.demo.behavioral.iterator.NumberRangeTest
 com.example.demo.behavioral.iterator.NumberRangeTest.singleElement_iteratesOnce -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.iterator.NumberRange.iterator(NumberRange.java:15)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.behavioral.iterator.NumberRangeTest.hasNext_falseWhenExhausted -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.behavioral.iterator.NumberRangeTest.hasNext_falseWhenExhausted -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.behavioral.iterator.NumberRange.iterator(NumberRange.java:15)
 	at com.example.demo.behavioral.iterator.NumberRangeTest.hasNext_falseWhenExhausted(NumberRangeTest.java:37)

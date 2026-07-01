@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.structural.proxy.ProxyImageTest.proxy_doesNotReloadOnSubsequentDisplays -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.structural.proxy.ProxyImageTest.proxy_doesNotReloadOnSubsequentDisplays -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.structural.proxy.ProxyImage.display(ProxyImage.java:9)
 	at com.example.demo.structural.proxy.ProxyImageTest.proxy_doesNotReloadOnSubsequentDisplays(ProxyImageTest.java:25)

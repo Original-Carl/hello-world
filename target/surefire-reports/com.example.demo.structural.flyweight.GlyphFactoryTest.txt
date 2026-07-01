@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.structural.flyweight.GlyphFactoryTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! -- in com.example.demo.structural.flyweight.GlyphFactoryTest
-com.example.demo.structural.flyweight.GlyphFactoryTest.differentSymbol_returnsDifferentInstance -- Time elapsed: 0 s <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.004 s <<< FAILURE! -- in com.example.demo.structural.flyweight.GlyphFactoryTest
+com.example.demo.structural.flyweight.GlyphFactoryTest.differentSymbol_returnsDifferentInstance -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.structural.flyweight.GlyphFactory.getGlyph(GlyphFactory.java:4)
 	at com.example.demo.structural.flyweight.GlyphFactoryTest.differentSymbol_returnsDifferentInstance(GlyphFactoryTest.java:20)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.structural.flyweight.GlyphFactoryTest.manyRenders_fewCachedInstances -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.structural.flyweight.GlyphFactoryTest.manyRenders_fewCachedInstances -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.structural.flyweight.GlyphFactory.getGlyph(GlyphFactory.java:4)
 	at com.example.demo.structural.flyweight.GlyphFactoryTest.manyRenders_fewCachedInstances(GlyphFactoryTest.java:55)

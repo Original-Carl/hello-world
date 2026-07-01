@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.creational.prototype.EnemyPrototypeTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in com.example.demo.creational.prototype.EnemyPrototypeTest
+Tests run: 5, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! -- in com.example.demo.creational.prototype.EnemyPrototypeTest
 com.example.demo.creational.prototype.EnemyPrototypeTest.registry_returnsNewCloneEachCall -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.creational.prototype.EnemyPrototypeRegistry.register(EnemyPrototypeRegistry.java:4)
@@ -18,7 +18,7 @@ java.lang.UnsupportedOperationException
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 
-com.example.demo.creational.prototype.EnemyPrototypeTest.modifyingClone_doesNotAffectOriginal -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.creational.prototype.EnemyPrototypeTest.modifyingClone_doesNotAffectOriginal -- Time elapsed: 0 s <<< ERROR!
 java.lang.UnsupportedOperationException
 	at com.example.demo.creational.prototype.Enemy.clone(Enemy.java:20)
 	at com.example.demo.creational.prototype.EnemyPrototypeTest.modifyingClone_doesNotAffectOriginal(EnemyPrototypeTest.java:29)

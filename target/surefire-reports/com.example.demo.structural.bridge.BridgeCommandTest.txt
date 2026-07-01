@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.structural.bridge.BridgeCommandTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! -- in com.example.demo.structural.bridge.BridgeCommandTest
-com.example.demo.structural.bridge.BridgeCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0.001 s <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! -- in com.example.demo.structural.bridge.BridgeCommandTest
+com.example.demo.structural.bridge.BridgeCommandTest.run_printsDescriptionAndStubMarker(CapturedOutput) -- Time elapsed: 0 s <<< FAILURE!
 java.lang.AssertionError: 
 
 Expecting actual:
