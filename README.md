@@ -2,6 +2,11 @@
 
 A runnable reference for all 23 Gang of Four design patterns, built with **Java 21** and **Spring Shell**.
 
+## Prerequisites
+
+- Java 21+
+- Maven 3.9+
+
 ## Build
 
 ```bash
@@ -27,6 +32,12 @@ shell> singleton
 shell> exit
 ```
 
+## Test
+
+```bash
+mvn test
+```
+
 ## Patterns
 
 ### Creational
@@ -35,8 +46,8 @@ shell> exit
 | `factory` | Factory Method | ✅ full demo |
 | `builder` | Builder | ✅ full demo |
 | `singleton` | Singleton | ✅ full demo |
-| `abstract-factory` | Abstract Factory | stub |
-| `prototype` | Prototype | stub |
+| `abstract-factory` | Abstract Factory | ✅ full demo |
+| `prototype` | Prototype | ✅ full demo |
 
 ### Structural
 | Command | Pattern | Status |
@@ -56,16 +67,18 @@ shell> exit
 | `strategy` | Strategy | ✅ full demo |
 | `command` | Command | ✅ full demo |
 | `chain` | Chain of Responsibility | stub |
-| `iterator` | Iterator | stub |
+| `iterator` | Iterator | ✅ full demo |
 | `mediator` | Mediator | stub |
-| `memento` | Memento | stub |
+| `memento` | Memento | ✅ full demo |
 | `state` | State | stub |
 | `template` | Template Method | stub |
 | `visitor` | Visitor | stub |
 | `interpreter` | Interpreter | stub |
 
-Stubs print a description of the pattern's intent and a worked example scenario. PRs welcome to promote them to full demos.
+Stubs print the pattern's intent and a worked example scenario. See [CONTRIBUTING.md](CONTRIBUTING.md) to promote one to a full demo.
 
 ## Structure
 
 Each pattern lives in its own package under `src/main/java/com/example/demo/{family}/{pattern}/`.
+
+A machine-readable command reference is at [`specs/commands.yaml`](specs/commands.yaml).
