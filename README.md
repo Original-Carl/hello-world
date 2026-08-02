@@ -57,7 +57,7 @@ mvn test
 | `facade` | Facade | ✅ full demo |
 | `bridge` | Bridge | stub |
 | `composite` | Composite | stub |
-| `flyweight` | Flyweight | stub |
+| `flyweight` | Flyweight | ✅ full demo |
 | `proxy` | Proxy | stub |
 
 ### Behavioral

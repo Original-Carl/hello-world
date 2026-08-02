@@ -103,7 +103,7 @@ commands:
   - name: flyweight
     family: structural
     pattern: Flyweight
-    status: stub
+    status: full_demo
     invoke: "./demo.sh flyweight"
     description: >
       Shares intrinsic state across many fine-grained objects to reduce memory usage,
