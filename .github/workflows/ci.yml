@@ -27,6 +27,14 @@ jobs:
           name: app-jar
           path: target/*.jar
 
+      - name: Upload compiled classes
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-classes
+          path: |
+            target/classes/**
+            target/test-classes/**
+
   test:
     needs: build
     runs-on: ubuntu-latest
@@ -40,8 +48,14 @@ jobs:
           distribution: temurin
           cache: maven
 
+      - name: Download compiled classes
+        uses: actions/download-artifact@v4
+        with:
+          name: compiled-classes
+          path: target
+
       - name: Run tests
-        run: mvn -B test
+        run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent surefire:test
 
       - name: Upload test output
         if: always()
