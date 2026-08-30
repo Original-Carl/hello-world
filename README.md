@@ -71,7 +71,7 @@ mvn test
 | `mediator` | Mediator | stub |
 | `memento` | Memento | ✅ full demo |
 | `state` | State | stub |
-| `template` | Template Method | stub |
+| `template` | Template Method | ✅ full demo |
 | `visitor` | Visitor | stub |
 | `interpreter` | Interpreter | stub |
 
