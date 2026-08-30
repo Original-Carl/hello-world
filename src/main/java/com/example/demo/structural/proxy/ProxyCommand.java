@@ -20,8 +20,19 @@ public class ProxyCommand {
 
                 Example: a virtual proxy for a high-resolution image that loads the actual
                 image from disk only when display() is first called.
-
-                [stub — full demo coming]
                 """);
+
+        ProxyImage image = new ProxyImage("mountain-4k.jpg");
+        System.out.println("  ProxyImage created — real image not loaded yet. Load count: " + image.loadCount());
+
+        System.out.println("  Calling display() (1st time)...");
+        System.out.println("    " + image.display());
+        System.out.println("  Load count after 1st display: " + image.loadCount());
+
+        System.out.println("  Calling display() (2nd time)...");
+        System.out.println("    " + image.display());
+        System.out.println("  Calling display() (3rd time)...");
+        System.out.println("    " + image.display());
+        System.out.println("  Load count after 3 displays: " + image.loadCount() + " (real image loaded only once)");
     }
 }

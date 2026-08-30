@@ -6,6 +6,13 @@ public class ProxyImage implements ImageLoader {
 
     public ProxyImage(String filename) { this.filename = filename; }
 
-    @Override public String display()  { throw new UnsupportedOperationException(); }
+    @Override
+    public String display() {
+        if (realImage == null) {
+            realImage = new RealImage(filename);
+        }
+        return realImage.display();
+    }
+
     @Override public int loadCount()   { return realImage == null ? 0 : realImage.loadCount(); }
 }
