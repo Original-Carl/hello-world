@@ -196,11 +196,13 @@ commands:
   - name: template
     family: behavioral
     pattern: Template Method
-    status: stub
+    status: full_demo
     invoke: "./demo.sh template"
     description: >
       Defines the skeleton of an algorithm in a base class, deferring specific steps
-      to subclasses without changing the algorithm's structure.
+      to subclasses without changing the algorithm's structure. Demo: CsvExporter and
+      JsonExporter share the same final export() method, differing only in header()/
+      formatRow()/footer().
 
   - name: visitor
     family: behavioral
