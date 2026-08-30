@@ -112,11 +112,12 @@ commands:
   - name: proxy
     family: structural
     pattern: Proxy
-    status: stub
+    status: full_demo
     invoke: "./demo.sh proxy"
     description: >
       Provides a surrogate for another object to control access — virtual, protection,
-      remote, or caching variants.
+      remote, or caching variants. Demo: a virtual proxy defers loading a high-resolution
+      image until display() is first called, then reuses the loaded image on repeat calls.
 
   # Behavioral
   - name: observer

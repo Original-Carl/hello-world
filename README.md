@@ -58,7 +58,7 @@ mvn test
 | `bridge` | Bridge | stub |
 | `composite` | Composite | stub |
 | `flyweight` | Flyweight | ✅ full demo |
-| `proxy` | Proxy | stub |
+| `proxy` | Proxy | ✅ full demo |
 
 ### Behavioral
 | Command | Pattern | Status |

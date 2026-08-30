@@ -8,6 +8,6 @@ public class RealImage implements ImageLoader {
         // expensive load happens here in real implementation
     }
 
-    @Override public String display()  { throw new UnsupportedOperationException(); }
-    @Override public int loadCount()   { throw new UnsupportedOperationException(); }
+    @Override public String display()  { return "Displaying " + filename; }
+    @Override public int loadCount()   { return 1; }
 }
