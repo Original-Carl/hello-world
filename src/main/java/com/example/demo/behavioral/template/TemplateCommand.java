@@ -20,8 +20,9 @@ public class TemplateCommand {
                 subclasses fill them in. This is the inversion-of-control principle
                 ("don't call us, we'll call you").
 
-                Example: a DataProcessor base class defines read() → process() → write();
-                CsvProcessor and JsonProcessor override only the parsing step.
+                Example: a DataExporter base class defines the final export() method
+                (header() → formatRow() per row → footer()); CsvExporter and
+                JsonExporter override only those three hooks.
                 """);
 
         List<String> rows = List.of("Alice,30", "Bob,25");
